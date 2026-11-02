@@ -353,6 +353,27 @@
   }
   .work-tags span:not(:last-child)::after { content: "·"; margin-left: 8px; color: var(--line-strong); }
   .work-body p { max-width: 66ch; margin: 0 0 18px; }
+  .work-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 40px;
+    margin: 0 0 22px;
+  }
+  .work-stats div { display: flex; flex-direction: column; }
+  .work-stats strong {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .work-stats span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
   .work-note {
     font-family: var(--font-mono);
     font-size: 12px;
@@ -537,7 +558,7 @@
     <div class="section-head">
       <div>
         <p class="eyebrow plain">Selected work</p>
-        <h2 class="title">Two things I'm proud of</h2>
+        <h2 class="title">Three things I'm proud of</h2>
       </div>
     </div>
 
@@ -552,17 +573,42 @@
           <span>2022–2025</span>
         </div>
         <p>
-          Took creative and strategic ownership of Fjällräven Polar end to end: the
-          storytelling that carried the expedition to the world. Different rooms need
+          Took creative and strategic ownership of Fjällräven Polar end to end, shaping how
+          the story of the expedition was told to the world. Different rooms need
           different cuts of the same story: press, community, and the people actually
           pulling the sled all got their own version.
         </p>
+        <div class="work-stats">
+          <div><strong>40,000+</strong><span>Applications</span></div>
+          <div><strong>8M</strong><span>Impressions</span></div>
+        </div>
         <p class="work-note">Case study assets (film, reports, campaign work) available on request. Happy to walk through it.</p>
       </div>
     </div>
 
-    <div id="brief-sharpener" class="work-item">
+    <div class="work-item">
       <div class="work-num">02</div>
+      <div class="work-body">
+        <h3>Future Ready</h3>
+        <div class="work-tags">
+          <span>Program Design</span>
+          <span>Leadership</span>
+          <span>Google × Hyper Island</span>
+        </div>
+        <p>
+          Designed and led Future Ready together with Google and Hyper Island, an eight-week
+          program for people whose jobs are disappearing as AI moves in. Helping them figure
+          out what comes next is still one of the things I'm proudest of.
+        </p>
+        <div class="work-stats">
+          <div><strong>500</strong><span>Participants</span></div>
+          <div><strong>8</strong><span>Weeks</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="brief-sharpener" class="work-item">
+      <div class="work-num">03</div>
       <div class="work-body">
         <h3>Brief Sharpener</h3>
         <div class="work-tags">
